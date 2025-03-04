@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Microsoft</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+
+
+.img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.fnt {
+    font-family: Poppins;
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+} 
+
+.abt {
+    font-family: Poppins;
+    font-size: 30px;
+}
+
+.quotes {
+    font-family: Poppins;
+    font-size: 17px;
+    background-color: rgb(234, 232, 232);
+    padding: 1%;
+}
+
+.cntc {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.menu {
+    display: none;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px; 
+    margin-top: 20px; 
+    padding-right: 20px; 
+}
+
+.btn {
+    background-color: #000000; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+    font-family: Poppins;
+}
+
+.btn:hover {
+    background-color: #2d3132; 
+}
+
+/* Navbar */
+.navbar {
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+    font-family: Poppins;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar:hover {
+    background-color: #2d3132;
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Gambar -->
+<div class="img">
+    <img src=c:\Users\User\OneDrive\Pictures\microsoft_outage_inc.jpg" alt="Microsoft Outage Image">
+</div>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s4">
+      <a href="#" class="navbar">HOME</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#about" class="navbar">ABOUT</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#where" class="navbar">CONTACT US</a>
+    </div>
+  </div>
+</div>
+
+<!-- button -->
+<div class="button-container">
+    <button class="btn" onclick="location.href='https://www.microsoft.com/id-id/edge/?form=MA13FJ';">Microsoft Edge</button>
+    <button class="btn" onclick="location.href='https://www.microsoft.com/id-id/microsoft-365/microsoft-office';">Microsoft Office</button>
+    <button class="btn" onclick="location.href='https://www.microsoft.com/en-us/windows';">Windows</button>
+</div>
+
+<!-- About -->
+<div class="w3-container" id="about">
+    <div class="w3-content" style="max-width: 800px; margin-bottom: 20px;">
+    <h5 class="w3-center w3-padding-64"><span class="abt">Microsoft Corporation</span></h5>
+    <p class="fnt">American multinational technology company headquartered in Redmond, Washington. Founded in 1975, the company became highly influential in the rise of personal computers through software like Windows, and has since expanded into Internet services, cloud computing, video gaming, and more.</p>
+    <div class="quotes">
+      <p><i>"I believe in innovation and that the way you get innovation is you fund research and you learn the basic facts"</i></p>
+      <p style="text-align: right;"><b>— Co-Founder of Microsoft, Bill Gates</b></p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="abt">CONTACT US</span></h5>
+    <p class="cntc">Sign in so we can get you the right help and support.</p>
+    <p class="cntc">Subscribe to Business Assist to get expert advice from small-business specialists. Already a subscriber? Sign in now.</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email, phone, or Skype" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="password" placeholder="Password" required name="Password"></p>
+      <p><button class="w3-button w3-black" type="submit" style="font-family: Poppins;">Sign In</button></p>
+    </form>
+  </div>
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+</script>
+
+</body>
+</html>
